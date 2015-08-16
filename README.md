@@ -1,6 +1,5 @@
 # UnityMeshGenerator
-- runtime generate mesh on script
-- 
+runtime generate mesh on script
 
 # Concept
 - 1 line, 1 mesh
