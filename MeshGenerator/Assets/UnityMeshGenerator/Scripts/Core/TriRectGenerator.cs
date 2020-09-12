@@ -7,12 +7,9 @@ namespace UnityMeshGenerator.Core
         private const int VertCount = 4;
         private const int UvCount = 4;
         
-        #region Generation
-
         public Mesh Generate(float x, float y)
         {
-            var mesh = new Mesh();
-            mesh.name = string.Format("TriangleRect - x:{0}, y:{1}", x, y);
+            var mesh = new Mesh {name = $"TriangleRect - x:{x}, y:{y}"};
 
             //	set vert
             var halfX = x * 0.5f;
@@ -59,7 +56,5 @@ namespace UnityMeshGenerator.Core
 
             return mesh;
         }
-
-        #endregion
     }
 }
